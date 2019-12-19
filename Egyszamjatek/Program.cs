@@ -36,12 +36,12 @@ namespace Egyszamjatek
                 {
                     temp.Tipplista.Add(int.Parse(adatsor[i]));
                 }
-
                 Jatekosok.Add(temp);
             }
             sr.Close();
+
             Console.WriteLine("3. feladat: Játékosok száma: {0} fő",Jatekosok.Count);
-            Console.Write("Kérem a forduló sorszámát: ");
+            Console.Write("4. feladat: Kérem a forduló sorszámát: ");
             int sorszam = int.Parse(Console.ReadLine());
             double osszeg = 0;
 
