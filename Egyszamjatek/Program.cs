@@ -40,7 +40,7 @@ namespace Egyszamjatek
                 Jatekosok.Add(temp);
             }
             sr.Close();
-
+            /**/
 
 
         }
