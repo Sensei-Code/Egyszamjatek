@@ -40,9 +40,19 @@ namespace Egyszamjatek
                 Jatekosok.Add(temp);
             }
             sr.Close();
-            /**/
+            Console.WriteLine("3. feladat: Játékosok száma: {0} fő",Jatekosok.Count);
+            Console.Write("Kérem a forduló sorszámát: ");
+            int sorszam = int.Parse(Console.ReadLine());
+            double osszeg = 0;
 
+            foreach (var Jatekos in Jatekosok)
+            {
+                osszeg += Jatekos.Tipplista[sorszam-1];
+            }
 
+            Console.WriteLine("5. feladat: A megadott forduló tippjeinek átlaga: {0}",Math.Round(osszeg/Jatekosok.Count,2));
+
+            Console.ReadLine();
         }
     }
 }
